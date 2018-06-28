@@ -1,0 +1,5 @@
+https://www.kancloud.cn/manual/thinkphp5/177576
+
+如上配置了 nginx 配置
+
+就可以使用  domain/abc/2

@@ -1,0 +1,35 @@
+module1 module2 是我们自己手动创建的 里面的文件按照文件接口创建
+那么在路由访问的地方设置
+
+
+     'hello:id' = >'module1/Index/main';          模块名  文件名 方法名
+
+
+http://serverName/模块/控制器/操作/[参数名/参数值...]
+
+
+目录结构
+标准的应用和模块目录结构如下：
+
+├─application           应用目录（可设置）
+│  ├─common             公共模块目录（可选）
+│  ├─common.php         公共函数文件
+│  ├─route.php          路由配置文件
+│  ├─database.php       数据库配置文件
+│  ├─config.php         应用配置文件
+│  ├─module1            模块1目录
+│  │  ├─config.php      模块配置文件
+│  │  ├─common.php      模块函数文件
+│  │  ├─controller      控制器目录
+│  │  ├─model           模型目录（可选）
+│  │  ├─view            视图目录（可选）
+│  │  └─ ...            更多类库目录
+│  │ 
+│  ├─module2            模块2目录
+│  │  ├─config.php      模块配置文件
+│  │  ├─common.php      模块函数文件
+│  │  ├─controller      控制器目录
+│  │  ├─model           模型目录（可选）
+│  │  ├─view            视图目录（可选）
+│  │  └─ ...            更多类库目录
+遵循ThinkPHP5.0的命名规范，模块目录全部采用小写和下划线命名。

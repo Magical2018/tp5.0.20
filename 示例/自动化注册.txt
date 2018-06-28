@@ -1,0 +1,22 @@
+自动注册
+我们只需要把自己的类库包目录放入EXTEND_PATH目录（默认为extend，可配置），就可以自动注册对应的命名空间，例如：
+
+我们在extend目录下面新增一个my目录，然后定义一个\my\Test类（ 类文件位于extend/my/Test.php）如下：
+
+namespace my;
+
+class Test 
+{
+    public function sayHello()
+    {
+        echo 'hello';
+    }
+}
+我们就可以直接实例化和调用：
+
+$Test = new \my\Test();
+$Test->sayHello();
+如果我们在应用入口文件中重新定义了EXTEND_PATH常量的话，还可以改变\my\Test类文件的位置，例如：
+
+define('EXTEND_PATH','../vendor/');
+那么\my\Test类文件的位置就变成了/vendor/my/File.php。

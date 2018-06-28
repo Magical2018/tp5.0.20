@@ -1,0 +1,16 @@
+https://www.kancloud.cn/manual/thinkphp5/118016
+
+这个库得位置 位于  thinkphp_5.0.20_with_ext\thinkphp\library\下
+有2个文件
+think  这个是系统核心目录
+
+traits 这个是公共类库文件 解决类得重复 引用
+   这个里面继承了几个函数  跳转  成功提示  错误提示error();
+
+使用得时候这个样子
+use \traits\controller\Jump;
+
+function index(){
+
+	 $this->redirect();   //这个成员函数就是从  trait 中继承得， 以前得TP3 是通过 extends 继承基类
+}

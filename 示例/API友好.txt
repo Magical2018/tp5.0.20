@@ -1,0 +1,7 @@
+https://www.kancloud.cn/manual/thinkphp5/118017
+
+TP return 出的 格式有  html  json  xml  jsonp
+
+
+
+config.php 文件中 'default_return_type'=>'json' 也可以调整默认的输出格式
